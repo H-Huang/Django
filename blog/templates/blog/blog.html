@@ -1,6 +1,6 @@
 {% extends "personal/header.html" %}
 
-{% extends block content %}
+{% block content %}
   {% for post in object_list %}
     <h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}"></a></h5>
   {% endfor %}
